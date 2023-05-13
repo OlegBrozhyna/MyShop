@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Orders Page</title>
+</head>
+<body>
+<h1>All Orders</h1>
+<table>
+  <thead>
+  <tr>
+    <th>Order ID</th>
+    <th>User ID</th>
+    <th>Order Date</th>
+    <th>Total Amount</th>
+  </tr>
+  </thead>
+  <tbody>
+  <c:forEach var="order" items="${orders}">
+    <tr>
+      <td>${order.id}</td>
+      <td>${order.user.id}</td>
+      <td>${order.orderDate}</td>
+      <td>${order.totalAmount}</td>
+    </tr>
+  </c:forEach>
+  </tbody>
+</table>
+</body>
+</html>
