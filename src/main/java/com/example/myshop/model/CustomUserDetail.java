@@ -1,4 +1,4 @@
-package com.example.myshop.global;
+package com.example.myshop.model;
 
 import com.example.myshop.model.User;
 import org.springframework.security.core.GrantedAuthority;

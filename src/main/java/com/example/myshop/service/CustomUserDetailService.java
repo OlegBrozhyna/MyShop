@@ -1,7 +1,7 @@
 package com.example.myshop.service;
 
 
-import com.example.myshop.global.CustomUserDetail;
+import com.example.myshop.model.CustomUserDetail;
 import com.example.myshop.model.User;
 import com.example.myshop.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
