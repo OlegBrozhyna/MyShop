@@ -52,26 +52,7 @@
     </div>
 </nav>
 
-<style>
-    .container {
-        display: grid;
-        place-items: center;
-        height: 90vh;
-    }
-
-    .pad-b {
-        padding-bottom: 2rem;
-    }
-
-    .social-link {
-        margin-bottom: 2rem;
-    }
-
-    .social-link a {
-        text-decoration: none;
-        color: black;
-    }
-</style>
+<link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body>
 
@@ -108,9 +89,11 @@
                 </div>
                 <div class="col-sm-4">
                     <h4 class="pad-b">Contacts</h4>
-                    <p>+380660282328</p>
-                    <p>+380660282328 Viber</p>
-                    <p>+380660282328 Telegram</p>
+                    <div class="contact">
+                        <a href="tel:+380660282328">+380660282328</a><br>
+                        <a href="viber://chat/?number=%2B">Написати у Viber</a><br>
+                        <a href="https://telegram.me/+380660282328">Написати у Telegram</a>
+                    </div>
                 </div>
                 <div class="col-sm-4 social">
                     <h4 class="pad-b">Social networks</h4>

@@ -1,0 +1,45 @@
+.container {
+    display: grid;
+    place-items: center;
+    height: 90vh;
+}
+
+/*Index*/
+.pad-b {
+    padding-bottom: 2rem;
+}
+.contact a {
+    display: inline-block;
+    color: #325252;
+    text-decoration: none;
+    padding-bottom: 1rem;
+}
+.contact :hover{
+    color: black;
+}
+
+.social-link {
+    margin-bottom: 2rem;
+}
+
+.social-link a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Shop */
+.container {
+    height: 50vh;
+}
+.col-sm-5 {
+    align-items: center;
+}
+.card {
+    margin-top: 35px;
+}
+.list-group a {
+    text-decoration: none;
+}
+.list-group-item{
+    color: #325252;
+}
