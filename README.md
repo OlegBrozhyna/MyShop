@@ -1,5 +1,6 @@
 # Spring-Myshop
-Traditional server rendered e-commerce store built on Spring Framework for learning purposes. 
+Traditional server rendered e-commerce store built on Spring Framework
+
 
 ### TECHNOLOGIES:
 * Java 17
@@ -11,11 +12,9 @@ Traditional server rendered e-commerce store built on Spring Framework for learn
 * CSS
 
 ### FUNCTIONALITY/FEATURES:
-* User register/login with role based authorization.
-* Admin portal for CRUD operations on products (only accessible by admin user).
-* Purchasing: view details of product, add to shopping cart, checkout, place order with shipping address and payment info.
-* Create and edit user profile, view orders history.
-* Responsive design.
+* User registration/login with role-based authorization.
+* Admin portal for CRUD operations on products (only available to admin user).
+* Purchase: view product details, add to cart, checkout, place order with shipping address
 * 
 * Administrator login: admin@gmail.com
 * Administrator password:123456
