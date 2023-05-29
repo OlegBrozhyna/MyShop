@@ -1,7 +1,6 @@
 # Spring-Myshop
 Traditional server rendered e-commerce store built on Spring Framework
 
-
 ### TECHNOLOGIES:
 * Java 17
 * Spring framework (Sping boot,Spring Web, Spring MVC, Spring Data JPA/Hibernate, Spring Security)
