@@ -1,6 +1,7 @@
 # Spring-Myshop
 Traditional server rendered e-commerce store built on Spring Framework
- https://spring-online.herokuapp.com/
+for learning purposes
+[Live demo here](https://spring-online.herokuapp.com/)
 
 ### TECHNOLOGIES:
 * Java 17
@@ -18,12 +19,5 @@ Traditional server rendered e-commerce store built on Spring Framework
 * 
 * Administrator login: admin@gmail.com
 * Administrator password:123456
-
-
-### Aditional info
-I uploaded both the script (might not be reusable in the future without modifications)
-All the images were originally links to cloud resources but I decided later to serve them as static assets for simplicity.
-Spring framework (Sping boot, Spring MVC, Spring Data JPA/Hibernate, Spring Security)
-* MySQL
-* Thymeleaf
+* 
 
