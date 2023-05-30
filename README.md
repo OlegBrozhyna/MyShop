@@ -17,7 +17,6 @@ for learning purposes
 * Admin portal for CRUD operations on products (only available to admin user).
 * Purchase: view product details, add to cart, checkout, place order with shipping address
 * 
-* Administrator login: admin@gmail.com
-* Administrator password:123456
+
 * 
 
