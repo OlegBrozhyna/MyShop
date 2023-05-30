@@ -1,7 +1,7 @@
 # Spring-Myshop
 Traditional server rendered e-commerce store built on Spring Framework
 for learning purposes
-[Live demo here](https://spring-online.herokuapp.com/)
+[Live demo here](https://spring-online.herokuapp.com)
 
 ### TECHNOLOGIES:
 * Java 17
