@@ -12,6 +12,7 @@ for learning purposes
 * jQuery
 * CSS
 
+
 ### FUNCTIONALITY/FEATURES:
 * User registration/login with role-based authorization.
 * Admin portal for CRUD operations on products (only available to admin user).
