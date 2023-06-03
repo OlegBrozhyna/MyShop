@@ -19,6 +19,7 @@ public class HomeController {
     @GetMapping({"/", "/home"})
     public String home(Model model) {
         model.addAttribute("cartCount", GlobalData.cart.size());
+
         return "index";
     }
 
