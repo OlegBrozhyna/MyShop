@@ -8,7 +8,6 @@ import javax.persistence.*;
 @Entity
 @Table(name = "checkout")
 public class OrderDetails {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
