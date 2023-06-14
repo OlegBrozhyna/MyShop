@@ -1,6 +1,7 @@
 package com.example.myshop.controller;
 
 import com.example.myshop.global.GlobalData;
+
 import com.example.myshop.model.Product;
 import com.example.myshop.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,10 +12,14 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.List;
+
 @Controller
 public class CartController {
     @Autowired
     ProductService productService;
+    Product product;
+
     @GetMapping("/addToCart/{id}")
     public String addToCart(@PathVariable long id){
         GlobalData.cart.add(productService.getProductById(id).get());
@@ -38,6 +43,23 @@ public class CartController {
         model.addAttribute("total",GlobalData.cart.stream().mapToDouble(Product::getPrice).sum());
         return  "checkout";
     }
+
+    @PostMapping("/payNow")
+    public String payNow(Model model) {
+        // Отримання обраного товару з кошика
+        List<Product> cartItems = GlobalData.cart;
+        model.addAttribute("total",GlobalData.cart.stream().mapToDouble(Product::getPrice).sum());
+        model.addAttribute("cartItems",cartItems);
+        return "orderPlaced";
     }
+    @PostMapping("/confirmOrder")
+    public String confirmOrder(){
+        GlobalData.cart.clear();
+        return "/confirmOrder";
+    }
+}
+
+
+
 
 
