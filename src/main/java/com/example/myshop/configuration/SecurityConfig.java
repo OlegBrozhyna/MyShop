@@ -22,6 +22,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     GoogleOAuth2SuccessHandler googleOAuth2SuccessHandler;
     @Autowired
     CustomUserDetailService customUserDetailService;
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
@@ -74,16 +75,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
 
-        public void configureViewResolvers(ViewResolverRegistry registry) {
-            registry.viewResolver(viewResolver());
-        }
-
-        @Bean
-        public ViewResolver viewResolver() {
-            InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-            resolver.setPrefix("/WEB-INF/views/");
-            resolver.setSuffix(".html");
-            return resolver;
-        }
+    public void configureViewResolvers(ViewResolverRegistry registry) {
+        registry.viewResolver(viewResolver());
     }
+
+    @Bean
+    public ViewResolver viewResolver() {
+        InternalResourceViewResolver resolver = new InternalResourceViewResolver();
+        resolver.setPrefix("/WEB-INF/views/");
+        resolver.setSuffix(".html");
+        return resolver;
+    }
+}
 
